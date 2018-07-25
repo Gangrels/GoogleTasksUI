@@ -1,0 +1,177 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    height: 100vh
+  }
+
+
+a{
+    text-decoration: none;
+}
+
+.login-page{
+    background-color: #8DAA91;
+    background: linear-gradient(45deg, #4e21d3 0%,#d985f7 100%);
+    width: 100%;
+    min-height: 100%;
+}
+
+.login-page-container{
+    padding: 200px;
+    left: 20px;
+    top: 50px;
+}
+
+    .login-page-container h1{
+        color: white;
+    }
+
+
+.home-container{
+    display: flex;
+    min-height: 100%;
+}
+
+.side-bar{
+    background-color: #EDF5FF;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    flex-shrink: 3;
+    flex-basis: 250px;
+
+}
+
+    .side-bar-divide{
+        margin-bottom: 0;
+    }
+
+    .side-bar h2{
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    .side-bar ul{
+        list-style: none;
+        padding: 0;
+    }
+
+    .tasks-text{
+        margin: 0;
+        text-align: left;
+    }
+
+    .side-bar-list .active p{
+        font-weight: bold;
+    }
+
+.main{
+    background-color: #FFFFFF;
+    min-width: 600px;
+    padding: 10px 20px;
+    flex: 3 1 auto;
+    max-width: 500px;
+    position: relative;
+}
+
+    .main-add_button{
+        position: absolute;
+        right: 10px;
+    }
+
+    .main-edit_button{
+        position: absolute;
+        right: 60px;
+    }
+
+    .main-remove_button{
+        position: absolute;
+        right: 110px;
+    }
+
+    .main b{
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+.main-tasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .main-tasks{
+        margin-top: 40px;
+    }
+
+.task{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+    .task-edit-container{
+        width: 100%;
+    }
+
+    .task-input{
+        border: 1px solid #0197f6;
+        width: 90%;
+        font-size: 16px;
+        margin: 10px;
+        padding: 5px;
+        box-shadow: 0 8px 6px -6px black;
+    }
+
+    .task-menu{
+        /* flex-grow: 1; */
+    }
+
+    .task-additions{
+        width: 100%;
+        margin: 2px 0 5px 15px;
+        font-size: 10px;
+        /* padding-bottom: 2px; */
+    }
+
+    .task-date{
+        margin-bottom: 5px;
+    }
+
+        .task-date-pick{
+            margin: 5px 0 0 10px;
+        }
+
+        .task-note-edit{
+            margin: 10px 0 10px 10px;
+        }
+
+        .task-note-head{
+            color: #858585;
+            font-size: 15px;
+            margin-bottom: 7px;
+        }
+
+
+    .task-savebutton{
+        margin: 10px;
+        color: black;
+    }
+
+    .task input[type=checkbox]{
+        background-color: red;
+    }
+
+    /* .task input[type=checkbox]:checked+.task-text{
+        background-color: red;
+        color: blue;
+    } */
+
+    .task-text{
+        flex-grow: 1;
+    }
